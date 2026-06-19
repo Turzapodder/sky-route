@@ -8,8 +8,9 @@ interface AirportInputProps {
   value: string;
   onChange: (code: string) => void;
   id: string;
+  icon?: React.ReactNode;
 }
-export function AirportInput({ label, value, onChange, id }: AirportInputProps) {
+export function AirportInput({ label, value, onChange, id, icon }: AirportInputProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState('');
   const [highlightIndex, setHighlightIndex] = useState(0);
@@ -65,26 +66,27 @@ export function AirportInput({ label, value, onChange, id }: AirportInputProps) 
   const selectedAirport = searchAirports(value).find((a) => a.code === value);
   return (
     <div ref={containerRef} className="relative">
-      <label htmlFor={id} className="block text-[10px] font-medium text-gray-500 uppercase tracking-wider mb-1">
-        {label}
-      </label>
       <button
         type="button"
         onClick={() => {
           setIsOpen(!isOpen);
           setTimeout(() => inputRef.current?.focus(), 0);
         }}
-        className="flex items-center gap-2 w-full text-left"
+        className="flex items-center gap-3 w-full text-left"
         aria-haspopup="listbox"
         aria-expanded={isOpen}
       >
-        <MapPin className="w-4 h-4 text-gray-400 flex-shrink-0" aria-hidden="true" />
-        <div className="min-w-0">
-          <span className="text-sm font-semibold text-gray-900 block truncate">
+        <div className="flex-shrink-0 text-gray-400">
+          {icon || <MapPin className="w-5 h-5" aria-hidden="true" />}
+        </div>
+        <div className="min-w-0 flex-1">
+          <label htmlFor={id} className="block text-xs font-medium text-gray-500 mb-0.5 cursor-pointer">
+            {label}
+          </label>
+          <span className="text-[15px] font-semibold text-gray-900 block truncate">
             {selectedAirport ? `${selectedAirport.city} (${selectedAirport.code})` : value}
           </span>
         </div>
-        <ChevronDown className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" aria-hidden="true" />
       </button>
       {isOpen && (
         <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50 animate-[fadeIn_0.15s_ease-out]">

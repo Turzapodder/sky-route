@@ -2,6 +2,7 @@ import { ArrowLeft, Plane } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SearchForm } from '@/components/search/SearchForm';
 import { FlightResults } from '@/components/results/FlightResults';
+import { PromoBanner } from '@/components/promotions/PromoBanner';
 import { BookingModal } from '@/components/booking/BookingModal';
 import { useFlightSearch } from '@/hooks/useFlightSearch';
 import { useBookingStore } from '@/store/useBookingStore';
@@ -16,53 +17,45 @@ export function ResultsPage() {
   }
   return (
     <>
-      <div className="px-4 sm:px-6 lg:px-8 py-6 space-y-6 max-w-[1400px] mx-auto">
-        {/* Page header */}
-        <div className="flex items-center gap-4">
-          <button className="text-gray-900 hover:text-gray-600 transition-colors" aria-label="Go back">
-            <ArrowLeft className="w-5 h-5" />
-          </button>
-          <h1 className="text-xl font-medium text-gray-900">
-            Flight Results
-          </h1>
-        </div>
-        {/* Search Form */}
-        <SearchForm onSearch={handleSearch} compact />
-        {/* Results */}
+      <div className="px-4 sm:px-6 lg:px-8 py-6 max-w-[1200px] mx-auto">
         {hasSearched ? (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-          >
-            <FlightResults
-              flights={flights}
-              airlines={airlines}
-              isLoading={isLoading}
-              error={error}
-              onBook={handleBook}
-              onRetry={handleSearch}
-            />
-          </motion.div>
-        ) : (
-          <div className="flex flex-col items-center justify-center py-20 text-center">
-            <div className="w-20 h-20 rounded-full bg-brand/10 flex items-center justify-center mb-6">
-              <Plane className="w-10 h-10 text-brand" aria-hidden="true" />
+          <div className="space-y-6">
+            {/* Page header */}
+            <div className="flex items-center gap-4">
+              <button className="text-gray-900 hover:text-gray-600 transition-colors" aria-label="Go back" onClick={() => { /* maybe reset search? */ }}>
+                <ArrowLeft className="w-5 h-5" />
+              </button>
+              <h1 className="text-xl font-medium text-gray-900">
+                Flight Results
+              </h1>
             </div>
-            <h2 className="text-lg font-semibold text-gray-900 mb-2">
-              Search for Flights
-            </h2>
-            <p className="text-sm text-gray-500 max-w-md mb-6">
-              Enter your travel details above and click search to find the best flight deals across top airlines.
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={handleSearch}
-              className="px-6 py-3 bg-gray-900 text-white rounded-xl font-medium text-sm shadow-lg hover:bg-gray-800 transition-colors"
+            
+            {/* Compact Search Form */}
+            <SearchForm onSearch={handleSearch} compact />
+            
+            {/* Results */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
             >
-              Search Flights
-            </motion.button>
+              <FlightResults
+                flights={flights}
+                airlines={airlines}
+                isLoading={isLoading}
+                error={error}
+                onBook={handleBook}
+                onRetry={handleSearch}
+              />
+            </motion.div>
+          </div>
+        ) : (
+          <div className="pt-4">
+            {/* Expanded Search Form */}
+            <SearchForm onSearch={handleSearch} compact={false} />
+            
+            {/* Promo Banner */}
+            <PromoBanner />
           </div>
         )}
       </div>
