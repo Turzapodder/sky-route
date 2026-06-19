@@ -1,0 +1,1475 @@
+{
+    "search_meta": {
+        "origin": "DAC",
+        "destination": "IST",
+        "departure_date": "2026-12-20",
+        "passengers": 2,
+        "currency": "USD",
+        "total_results": 42
+    },
+    "flights": [
+        {
+            "id": "FL-001",
+            "airline": {
+                "code": "TK",
+                "name": "Turkish Airlines",
+                "logo_url": "https://assets.flytkt.com/airlines/TK.svg"
+            },
+            "flight_number": "TK713",
+            "departure": {
+                "airport": "DAC",
+                "time": "06:15",
+                "timestamp": 1797747300
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "12:10",
+                "timestamp": 1797768600
+            },
+            "duration_minutes": 595,
+            "stops_count": 0,
+            "stops_details": [],
+            "pricing": {
+                "total_fare": 1150.00,
+                "commission": 90.00,
+                "agent_fare": 1060.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": true,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-002",
+            "airline": {
+                "code": "EK",
+                "name": "Emirates Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/EK.svg"
+            },
+            "flight_number": "EK585",
+            "departure": {
+                "airport": "DAC",
+                "time": "01:40",
+                "timestamp": 1797730800
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "10:20",
+                "timestamp": 1797762000
+            },
+            "duration_minutes": 760,
+            "stops_count": 1,
+            "stops_details": [
+                "DXB"
+            ],
+            "pricing": {
+                "total_fare": 1080.00,
+                "commission": 80.00,
+                "agent_fare": 1000.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-003",
+            "airline": {
+                "code": "QR",
+                "name": "Qatar Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/QR.svg"
+            },
+            "flight_number": "QR641",
+            "departure": {
+                "airport": "DAC",
+                "time": "10:15",
+                "timestamp": 1797761700
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "18:25",
+                "timestamp": 1797791100
+            },
+            "duration_minutes": 730,
+            "stops_count": 1,
+            "stops_details": [
+                "DOH"
+            ],
+            "pricing": {
+                "total_fare": 1080.00,
+                "commission": 80.00,
+                "agent_fare": 1000.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": false
+            }
+        },
+        {
+            "id": "FL-004",
+            "airline": {
+                "code": "SV",
+                "name": "Saudia",
+                "logo_url": "https://assets.flytkt.com/airlines/SV.svg"
+            },
+            "flight_number": "SV805",
+            "departure": {
+                "airport": "DAC",
+                "time": "15:05",
+                "timestamp": 1797779100
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "23:45",
+                "timestamp": 1797810300
+            },
+            "duration_minutes": 760,
+            "stops_count": 1,
+            "stops_details": [
+                "JED"
+            ],
+            "pricing": {
+                "total_fare": 950.00,
+                "commission": 70.00,
+                "agent_fare": 880.00
+            },
+            "tags": {
+                "is_cheapest": true,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-005",
+            "airline": {
+                "code": "BG",
+                "name": "BG Biman",
+                "logo_url": "https://assets.flytkt.com/airlines/BG.svg"
+            },
+            "flight_number": "BG037",
+            "departure": {
+                "airport": "DAC",
+                "time": "20:30",
+                "timestamp": 1797798600
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "06:10",
+                "timestamp": 1797833400
+            },
+            "duration_minutes": 820,
+            "stops_count": 1,
+            "stops_details": [
+                "KWI"
+            ],
+            "pricing": {
+                "total_fare": 970.00,
+                "commission": 65.00,
+                "agent_fare": 905.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-006",
+            "airline": {
+                "code": "GF",
+                "name": "Gulf Air",
+                "logo_url": "https://assets.flytkt.com/airlines/GF.svg"
+            },
+            "flight_number": "GF251",
+            "departure": {
+                "airport": "DAC",
+                "time": "05:40",
+                "timestamp": 1797745200
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "14:15",
+                "timestamp": 1797776100
+            },
+            "duration_minutes": 755,
+            "stops_count": 1,
+            "stops_details": [
+                "BAH"
+            ],
+            "pricing": {
+                "total_fare": 990.00,
+                "commission": 70.00,
+                "agent_fare": 920.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": false
+            }
+        },
+        {
+            "id": "FL-007",
+            "airline": {
+                "code": "KU",
+                "name": "Kuwait Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/KU.svg"
+            },
+            "flight_number": "KU284",
+            "departure": {
+                "airport": "DAC",
+                "time": "03:15",
+                "timestamp": 1797736500
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "12:45",
+                "timestamp": 1797770700
+            },
+            "duration_minutes": 810,
+            "stops_count": 1,
+            "stops_details": [
+                "KWI"
+            ],
+            "pricing": {
+                "total_fare": 960.00,
+                "commission": 60.00,
+                "agent_fare": 900.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-008",
+            "airline": {
+                "code": "TK",
+                "name": "Turkish Airlines",
+                "logo_url": "https://assets.flytkt.com/airlines/TK.svg"
+            },
+            "flight_number": "TK715",
+            "departure": {
+                "airport": "DAC",
+                "time": "22:50",
+                "timestamp": 1797807000
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "04:45",
+                "timestamp": 1797828300
+            },
+            "duration_minutes": 595,
+            "stops_count": 0,
+            "stops_details": [],
+            "pricing": {
+                "total_fare": 1220.00,
+                "commission": 95.00,
+                "agent_fare": 1125.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": true,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-009",
+            "airline": {
+                "code": "EK",
+                "name": "Emirates Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/EK.svg"
+            },
+            "flight_number": "EK587",
+            "departure": {
+                "airport": "DAC",
+                "time": "19:30",
+                "timestamp": 1797795000
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "04:25",
+                "timestamp": 1797827100
+            },
+            "duration_minutes": 775,
+            "stops_count": 1,
+            "stops_details": [
+                "DXB"
+            ],
+            "pricing": {
+                "total_fare": 1110.00,
+                "commission": 85.00,
+                "agent_fare": 1025.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-010",
+            "airline": {
+                "code": "QR",
+                "name": "Qatar Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/QR.svg"
+            },
+            "flight_number": "QR643",
+            "departure": {
+                "airport": "DAC",
+                "time": "20:00",
+                "timestamp": 1797796800
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "05:35",
+                "timestamp": 1797831300
+            },
+            "duration_minutes": 815,
+            "stops_count": 1,
+            "stops_details": [
+                "DOH"
+            ],
+            "pricing": {
+                "total_fare": 1090.00,
+                "commission": 80.00,
+                "agent_fare": 1010.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-011",
+            "airline": {
+                "code": "SV",
+                "name": "Saudia",
+                "logo_url": "https://assets.flytkt.com/airlines/SV.svg"
+            },
+            "flight_number": "SV809",
+            "departure": {
+                "airport": "DAC",
+                "time": "00:05",
+                "timestamp": 1797725100
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "09:40",
+                "timestamp": 1797759600
+            },
+            "duration_minutes": 815,
+            "stops_count": 1,
+            "stops_details": [
+                "RUH"
+            ],
+            "pricing": {
+                "total_fare": 940.00,
+                "commission": 65.00,
+                "agent_fare": 875.00
+            },
+            "tags": {
+                "is_cheapest": true,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": false
+            }
+        },
+        {
+            "id": "FL-012",
+            "airline": {
+                "code": "GF",
+                "name": "Gulf Air",
+                "logo_url": "https://assets.flytkt.com/airlines/GF.svg"
+            },
+            "flight_number": "GF249",
+            "departure": {
+                "airport": "DAC",
+                "time": "17:50",
+                "timestamp": 1797789000
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "05:15",
+                "timestamp": 1797829800
+            },
+            "duration_minutes": 925,
+            "stops_count": 1,
+            "stops_details": [
+                "BAH"
+            ],
+            "pricing": {
+                "total_fare": 965.00,
+                "commission": 70.00,
+                "agent_fare": 895.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-013",
+            "airline": {
+                "code": "EK",
+                "name": "Emirates Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/EK.svg"
+            },
+            "flight_number": "EK583",
+            "departure": {
+                "airport": "DAC",
+                "time": "10:15",
+                "timestamp": 1797761700
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "19:55",
+                "timestamp": 1797796500
+            },
+            "duration_minutes": 820,
+            "stops_count": 1,
+            "stops_details": [
+                "DXB"
+            ],
+            "pricing": {
+                "total_fare": 1150.00,
+                "commission": 90.00,
+                "agent_fare": 1060.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-014",
+            "airline": {
+                "code": "QR",
+                "name": "Qatar Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/QR.svg"
+            },
+            "flight_number": "QR639",
+            "departure": {
+                "airport": "DAC",
+                "time": "03:50",
+                "timestamp": 1797738600
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "13:10",
+                "timestamp": 1797772200
+            },
+            "duration_minutes": 800,
+            "stops_count": 1,
+            "stops_details": [
+                "DOH"
+            ],
+            "pricing": {
+                "total_fare": 1120.00,
+                "commission": 85.00,
+                "agent_fare": 1035.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-015",
+            "airline": {
+                "code": "KU",
+                "name": "Kuwait Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/KU.svg"
+            },
+            "flight_number": "KU286",
+            "departure": {
+                "airport": "DAC",
+                "time": "12:45",
+                "timestamp": 1797770700
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "23:55",
+                "timestamp": 1797810900
+            },
+            "duration_minutes": 910,
+            "stops_count": 1,
+            "stops_details": [
+                "KWI"
+            ],
+            "pricing": {
+                "total_fare": 955.00,
+                "commission": 60.00,
+                "agent_fare": 895.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-016",
+            "airline": {
+                "code": "BG",
+                "name": "BG Biman",
+                "logo_url": "https://assets.flytkt.com/airlines/BG.svg"
+            },
+            "flight_number": "BG335",
+            "departure": {
+                "airport": "DAC",
+                "time": "08:30",
+                "timestamp": 1797755400
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "21:40",
+                "timestamp": 1797802800
+            },
+            "duration_minutes": 1030,
+            "stops_count": 2,
+            "stops_details": [
+                "CGP",
+                "DXB"
+            ],
+            "pricing": {
+                "total_fare": 930.00,
+                "commission": 55.00,
+                "agent_fare": 875.00
+            },
+            "tags": {
+                "is_cheapest": true,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": false
+            }
+        },
+        {
+            "id": "FL-017",
+            "airline": {
+                "code": "SV",
+                "name": "Saudia",
+                "logo_url": "https://assets.flytkt.com/airlines/SV.svg"
+            },
+            "flight_number": "SV807",
+            "departure": {
+                "airport": "DAC",
+                "time": "18:10",
+                "timestamp": 1797790200
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "04:30",
+                "timestamp": 1797827400
+            },
+            "duration_minutes": 860,
+            "stops_count": 1,
+            "stops_details": [
+                "JED"
+            ],
+            "pricing": {
+                "total_fare": 980.00,
+                "commission": 70.00,
+                "agent_fare": 910.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-018",
+            "airline": {
+                "code": "EK",
+                "name": "Emirates Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/EK.svg"
+            },
+            "flight_number": "EK589",
+            "departure": {
+                "airport": "DAC",
+                "time": "16:50",
+                "timestamp": 1797785400
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "23:50",
+                "timestamp": 1797810600
+            },
+            "duration_minutes": 660,
+            "stops_count": 1,
+            "stops_details": [
+                "DXB"
+            ],
+            "pricing": {
+                "total_fare": 1350.00,
+                "commission": 110.00,
+                "agent_fare": 1240.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-019",
+            "airline": {
+                "code": "QR",
+                "name": "Qatar Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/QR.svg"
+            },
+            "flight_number": "QR645",
+            "departure": {
+                "airport": "DAC",
+                "time": "11:40",
+                "timestamp": 1797766800
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "19:15",
+                "timestamp": 1797794100
+            },
+            "duration_minutes": 695,
+            "stops_count": 1,
+            "stops_details": [
+                "DOH"
+            ],
+            "pricing": {
+                "total_fare": 1290.00,
+                "commission": 100.00,
+                "agent_fare": 1190.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-020",
+            "airline": {
+                "code": "TK",
+                "name": "Turkish Airlines",
+                "logo_url": "https://assets.flytkt.com/airlines/TK.svg"
+            },
+            "flight_number": "TK717",
+            "departure": {
+                "airport": "DAC",
+                "time": "13:55",
+                "timestamp": 1797774900
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "19:50",
+                "timestamp": 1797796200
+            },
+            "duration_minutes": 595,
+            "stops_count": 0,
+            "stops_details": [],
+            "pricing": {
+                "total_fare": 1400.00,
+                "commission": 120.00,
+                "agent_fare": 1280.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": true,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-021",
+            "airline": {
+                "code": "GF",
+                "name": "Gulf Air",
+                "logo_url": "https://assets.flytkt.com/airlines/GF.svg"
+            },
+            "flight_number": "GF253",
+            "departure": {
+                "airport": "DAC",
+                "time": "21:15",
+                "timestamp": 1797801300
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "07:30",
+                "timestamp": 1797838200
+            },
+            "duration_minutes": 855,
+            "stops_count": 1,
+            "stops_details": [
+                "BAH"
+            ],
+            "pricing": {
+                "total_fare": 985.00,
+                "commission": 70.00,
+                "agent_fare": 915.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-022",
+            "airline": {
+                "code": "KU",
+                "name": "Kuwait Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/KU.svg"
+            },
+            "flight_number": "KU288",
+            "departure": {
+                "airport": "DAC",
+                "time": "18:40",
+                "timestamp": 1797792000
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "05:10",
+                "timestamp": 1797829800
+            },
+            "duration_minutes": 870,
+            "stops_count": 1,
+            "stops_details": [
+                "KWI"
+            ],
+            "pricing": {
+                "total_fare": 975.00,
+                "commission": 65.00,
+                "agent_fare": 910.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": false
+            }
+        },
+        {
+            "id": "FL-023",
+            "airline": {
+                "code": "BG",
+                "name": "BG Biman",
+                "logo_url": "https://assets.flytkt.com/airlines/BG.svg"
+            },
+            "flight_number": "BG039",
+            "departure": {
+                "airport": "DAC",
+                "time": "02:30",
+                "timestamp": 1797733800
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "13:45",
+                "timestamp": 1797774300
+            },
+            "duration_minutes": 915,
+            "stops_count": 1,
+            "stops_details": [
+                "DOH"
+            ],
+            "pricing": {
+                "total_fare": 995.00,
+                "commission": 70.00,
+                "agent_fare": 925.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-024",
+            "airline": {
+                "code": "SV",
+                "name": "Saudia",
+                "logo_url": "https://assets.flytkt.com/airlines/SV.svg"
+            },
+            "flight_number": "SV811",
+            "departure": {
+                "airport": "DAC",
+                "time": "04:40",
+                "timestamp": 1797741600
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "16:15",
+                "timestamp": 1797783300
+            },
+            "duration_minutes": 935,
+            "stops_count": 1,
+            "stops_details": [
+                "JED"
+            ],
+            "pricing": {
+                "total_fare": 945.00,
+                "commission": 65.00,
+                "agent_fare": 880.00
+            },
+            "tags": {
+                "is_cheapest": true,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-025",
+            "airline": {
+                "code": "EK",
+                "name": "Emirates Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/EK.svg"
+            },
+            "flight_number": "EK581",
+            "departure": {
+                "airport": "DAC",
+                "time": "08:40",
+                "timestamp": 1797756000
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "21:15",
+                "timestamp": 1797801300
+            },
+            "duration_minutes": 995,
+            "stops_count": 2,
+            "stops_details": [
+                "DXB",
+                "ATH"
+            ],
+            "pricing": {
+                "total_fare": 1420.00,
+                "commission": 120.00,
+                "agent_fare": 1300.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-026",
+            "airline": {
+                "code": "QR",
+                "name": "Qatar Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/QR.svg"
+            },
+            "flight_number": "QR647",
+            "departure": {
+                "airport": "DAC",
+                "time": "02:10",
+                "timestamp": 1797732600
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "14:50",
+                "timestamp": 1797778200
+            },
+            "duration_minutes": 1000,
+            "stops_count": 2,
+            "stops_details": [
+                "DOH",
+                "BAH"
+            ],
+            "pricing": {
+                "total_fare": 1195.00,
+                "commission": 90.00,
+                "agent_fare": 1105.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-027",
+            "airline": {
+                "code": "TK",
+                "name": "Turkish Airlines",
+                "logo_url": "https://assets.flytkt.com/airlines/TK.svg"
+            },
+            "flight_number": "TK719",
+            "departure": {
+                "airport": "DAC",
+                "time": "19:05",
+                "timestamp": 1797793500
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "01:00",
+                "timestamp": 1797814800
+            },
+            "duration_minutes": 595,
+            "stops_count": 0,
+            "stops_details": [],
+            "pricing": {
+                "total_fare": 1480.00,
+                "commission": 130.00,
+                "agent_fare": 1350.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": true,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-028",
+            "airline": {
+                "code": "GF",
+                "name": "Gulf Air",
+                "logo_url": "https://assets.flytkt.com/airlines/GF.svg"
+            },
+            "flight_number": "GF255",
+            "departure": {
+                "airport": "DAC",
+                "time": "12:55",
+                "timestamp": 1797771300
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "00:20",
+                "timestamp": 1797812400
+            },
+            "duration_minutes": 925,
+            "stops_count": 1,
+            "stops_details": [
+                "BAH"
+            ],
+            "pricing": {
+                "total_fare": 1020.00,
+                "commission": 75.00,
+                "agent_fare": 945.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-029",
+            "airline": {
+                "code": "KU",
+                "name": "Kuwait Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/KU.svg"
+            },
+            "flight_number": "KU290",
+            "departure": {
+                "airport": "DAC",
+                "time": "07:45",
+                "timestamp": 1797752700
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "19:30",
+                "timestamp": 1797795000
+            },
+            "duration_minutes": 945,
+            "stops_count": 1,
+            "stops_details": [
+                "KWI"
+            ],
+            "pricing": {
+                "total_fare": 985.00,
+                "commission": 70.00,
+                "agent_fare": 915.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-030",
+            "airline": {
+                "code": "BG",
+                "name": "BG Biman",
+                "logo_url": "https://assets.flytkt.com/airlines/BG.svg"
+            },
+            "flight_number": "BG041",
+            "departure": {
+                "airport": "DAC",
+                "time": "15:20",
+                "timestamp": 1797780000
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "03:10",
+                "timestamp": 1797822600
+            },
+            "duration_minutes": 950,
+            "stops_count": 1,
+            "stops_details": [
+                "DXB"
+            ],
+            "pricing": {
+                "total_fare": 1010.00,
+                "commission": 75.00,
+                "agent_fare": 935.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-031",
+            "airline": {
+                "code": "SV",
+                "name": "Saudia",
+                "logo_url": "https://assets.flytkt.com/airlines/SV.svg"
+            },
+            "flight_number": "SV813",
+            "departure": {
+                "airport": "DAC",
+                "time": "09:30",
+                "timestamp": 1797759000
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "22:45",
+                "timestamp": 1797806700
+            },
+            "duration_minutes": 1035,
+            "stops_count": 1,
+            "stops_details": [
+                "RUH"
+            ],
+            "pricing": {
+                "total_fare": 925.00,
+                "commission": 60.00,
+                "agent_fare": 865.00
+            },
+            "tags": {
+                "is_cheapest": true,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": false
+            }
+        },
+        {
+            "id": "FL-032",
+            "airline": {
+                "code": "EK",
+                "name": "Emirates Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/EK.svg"
+            },
+            "flight_number": "EK591",
+            "departure": {
+                "airport": "DAC",
+                "time": "21:30",
+                "timestamp": 1797802200
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "09:30",
+                "timestamp": 1797845400
+            },
+            "duration_minutes": 960,
+            "stops_count": 1,
+            "stops_details": [
+                "DXB"
+            ],
+            "pricing": {
+                "total_fare": 1190.00,
+                "commission": 90.00,
+                "agent_fare": 1100.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-033",
+            "airline": {
+                "code": "QR",
+                "name": "Qatar Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/QR.svg"
+            },
+            "flight_number": "QR649",
+            "departure": {
+                "airport": "DAC",
+                "time": "05:15",
+                "timestamp": 1797743700
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "18:45",
+                "timestamp": 1797792300
+            },
+            "duration_minutes": 1050,
+            "stops_count": 1,
+            "stops_details": [
+                "DOH"
+            ],
+            "pricing": {
+                "total_fare": 1140.00,
+                "commission": 85.00,
+                "agent_fare": 1055.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-034",
+            "airline": {
+                "code": "TK",
+                "name": "Turkish Airlines",
+                "logo_url": "https://assets.flytkt.com/airlines/TK.svg"
+            },
+            "flight_number": "TK721",
+            "departure": {
+                "airport": "DAC",
+                "time": "11:20",
+                "timestamp": 1797765600
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "17:15",
+                "timestamp": 1797786900
+            },
+            "duration_minutes": 595,
+            "stops_count": 0,
+            "stops_details": [],
+            "pricing": {
+                "total_fare": 1550.00,
+                "commission": 140.00,
+                "agent_fare": 1410.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": true,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-035",
+            "airline": {
+                "code": "GF",
+                "name": "Gulf Air",
+                "logo_url": "https://assets.flytkt.com/airlines/GF.svg"
+            },
+            "flight_number": "GF257",
+            "departure": {
+                "airport": "DAC",
+                "time": "00:45",
+                "timestamp": 1797727500
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "14:20",
+                "timestamp": 1797776400
+            },
+            "duration_minutes": 1055,
+            "stops_count": 2,
+            "stops_details": [
+                "BAH",
+                "MCT"
+            ],
+            "pricing": {
+                "total_fare": 950.00,
+                "commission": 65.00,
+                "agent_fare": 885.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-036",
+            "airline": {
+                "code": "KU",
+                "name": "Kuwait Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/KU.svg"
+            },
+            "flight_number": "KU292",
+            "departure": {
+                "airport": "DAC",
+                "time": "22:15",
+                "timestamp": 1797804900
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "10:30",
+                "timestamp": 1797849000
+            },
+            "duration_minutes": 975,
+            "stops_count": 1,
+            "stops_details": [
+                "KWI"
+            ],
+            "pricing": {
+                "total_fare": 1030.00,
+                "commission": 75.00,
+                "agent_fare": 955.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-037",
+            "airline": {
+                "code": "BG",
+                "name": "BG Biman",
+                "logo_url": "https://assets.flytkt.com/airlines/BG.svg"
+            },
+            "flight_number": "BG043",
+            "departure": {
+                "airport": "DAC",
+                "time": "06:00",
+                "timestamp": 1797746400
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "19:40",
+                "timestamp": 1797795600
+            },
+            "duration_minutes": 1060,
+            "stops_count": 2,
+            "stops_details": [
+                "CGP",
+                "DOH"
+            ],
+            "pricing": {
+                "total_fare": 965.00,
+                "commission": 60.00,
+                "agent_fare": 905.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": false
+            }
+        },
+        {
+            "id": "FL-038",
+            "airline": {
+                "code": "SV",
+                "name": "Saudia",
+                "logo_url": "https://assets.flytkt.com/airlines/SV.svg"
+            },
+            "flight_number": "SV815",
+            "departure": {
+                "airport": "DAC",
+                "time": "13:30",
+                "timestamp": 1797773400
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "03:45",
+                "timestamp": 1797824700
+            },
+            "duration_minutes": 1095,
+            "stops_count": 1,
+            "stops_details": [
+                "JED"
+            ],
+            "pricing": {
+                "total_fare": 935.00,
+                "commission": 60.00,
+                "agent_fare": 875.00
+            },
+            "tags": {
+                "is_cheapest": true,
+                "is_fastest": false,
+                "is_refundable": false,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-039",
+            "airline": {
+                "code": "EK",
+                "name": "Emirates Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/EK.svg"
+            },
+            "flight_number": "EK593",
+            "departure": {
+                "airport": "DAC",
+                "time": "04:30",
+                "timestamp": 1797741000
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "18:25",
+                "timestamp": 1797791100
+            },
+            "duration_minutes": 1075,
+            "stops_count": 1,
+            "stops_details": [
+                "DXB"
+            ],
+            "pricing": {
+                "total_fare": 1210.00,
+                "commission": 90.00,
+                "agent_fare": 1120.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-040",
+            "airline": {
+                "code": "QR",
+                "name": "Qatar Airways",
+                "logo_url": "https://assets.flytkt.com/airlines/QR.svg"
+            },
+            "flight_number": "QR651",
+            "departure": {
+                "airport": "DAC",
+                "time": "17:45",
+                "timestamp": 1797788700
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "08:15",
+                "timestamp": 1797840900
+            },
+            "duration_minutes": 1110,
+            "stops_count": 1,
+            "stops_details": [
+                "DOH"
+            ],
+            "pricing": {
+                "total_fare": 1180.00,
+                "commission": 85.00,
+                "agent_fare": 1095.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-041",
+            "airline": {
+                "code": "TK",
+                "name": "Turkish Airlines",
+                "logo_url": "https://assets.flytkt.com/airlines/TK.svg"
+            },
+            "flight_number": "TK723",
+            "departure": {
+                "airport": "DAC",
+                "time": "23:45",
+                "timestamp": 1797810300
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "05:40",
+                "timestamp": 1797831600
+            },
+            "duration_minutes": 595,
+            "stops_count": 0,
+            "stops_details": [],
+            "pricing": {
+                "total_fare": 1690.00,
+                "commission": 150.00,
+                "agent_fare": 1540.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": true,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        },
+        {
+            "id": "FL-042",
+            "airline": {
+                "code": "GF",
+                "name": "Gulf Air",
+                "logo_url": "https://assets.flytkt.com/airlines/GF.svg"
+            },
+            "flight_number": "GF259",
+            "departure": {
+                "airport": "DAC",
+                "time": "09:15",
+                "timestamp": 1797758100
+            },
+            "arrival": {
+                "airport": "IST",
+                "time": "23:45",
+                "timestamp": 1797810300
+            },
+            "duration_minutes": 1110,
+            "stops_count": 1,
+            "stops_details": [
+                "BAH"
+            ],
+            "pricing": {
+                "total_fare": 1050.00,
+                "commission": 80.00,
+                "agent_fare": 970.00
+            },
+            "tags": {
+                "is_cheapest": false,
+                "is_fastest": false,
+                "is_refundable": true,
+                "allow_partial_payment": true
+            }
+        }
+    ]
+}
