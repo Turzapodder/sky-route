@@ -4,8 +4,6 @@ import { cn } from '@/lib/utils';
 const sortOptions = [
   { value: SortOption.CHEAPEST, label: 'Cheapest' },
   { value: SortOption.FASTEST, label: 'Fastest' },
-  { value: SortOption.DEPARTURE, label: 'Departure' },
-  { value: SortOption.DURATION, label: 'Duration' },
 ];
 export function SortControls() {
   const { sortOption, setSortOption } = useSearchStore();

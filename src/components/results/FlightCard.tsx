@@ -107,20 +107,26 @@ export function FlightCard({ flight, index, onBook }: FlightCardProps) {
           </div>
         </div>
         {/* Tags & Actions row */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mt-4 pt-3.5 border-t border-gray-50">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mt-4 pt-4 border-t border-dashed border-gray-200">
           {/* Tags */}
-          <div className="flex items-center gap-2 flex-wrap">
-            {flight.tags.is_cheapest && <Badge variant="success">Cheapest</Badge>}
-            {flight.tags.is_fastest && <Badge variant="info">Fastest</Badge>}
-            {flight.tags.is_refundable && <Badge variant="success">Refundable</Badge>}
-            {!flight.tags.is_refundable && <Badge variant="danger">Non Refundable</Badge>}
-            {flight.tags.allow_partial_payment && <Badge variant="warning">Partial Payment</Badge>}
+          <div className="flex items-center gap-4 flex-wrap">
+            {flight.tags.is_cheapest && <span className="text-[11px] font-semibold text-gray-500">Cheapest</span>}
+            {flight.tags.is_fastest && <span className="text-[11px] font-semibold text-gray-500">Fastest</span>}
+            {flight.tags.is_refundable ? (
+              <span className="text-[11px] font-semibold text-gray-500">Refundable</span>
+            ) : (
+              <span className="text-[11px] font-semibold text-gray-500">Non Refundable</span>
+            )}
+            <span className="text-[11px] font-semibold text-gray-500">Book & Hold</span>
+            {flight.tags.allow_partial_payment && (
+              <span className="text-[11px] font-semibold text-red-500">Partial Payment</span>
+            )}
           </div>
           {/* Action buttons */}
-          <div className="flex items-center gap-2 flex-shrink-0">
+          <div className="flex items-center gap-4 flex-shrink-0">
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-600 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
+              className="flex items-center gap-1.5 text-xs font-semibold text-gray-500 hover:text-gray-900 transition-colors"
               aria-expanded={isExpanded}
               aria-controls={`flight-details-${flight.id}`}
             >
@@ -131,7 +137,7 @@ export function FlightCard({ flight, index, onBook }: FlightCardProps) {
                 <ChevronDown className="w-3 h-3" />
               )}
             </button>
-            <Button size="sm" onClick={() => onBook(flight)}>
+            <Button size="sm" onClick={() => onBook(flight)} className="bg-gray-900 text-white hover:bg-gray-800 px-6">
               Book Now
             </Button>
           </div>

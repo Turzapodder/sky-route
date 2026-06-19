@@ -18,13 +18,12 @@ export function ResultsPage() {
     <>
       <div className="px-4 sm:px-6 lg:px-8 py-6 space-y-6 max-w-[1400px] mx-auto">
         {/* Page header */}
-        <div className="flex items-center gap-3">
-          <button className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors" aria-label="Go back">
+        <div className="flex items-center gap-4">
+          <button className="text-gray-900 hover:text-gray-600 transition-colors" aria-label="Go back">
             <ArrowLeft className="w-5 h-5" />
           </button>
-          <h1 className="text-xl font-bold text-gray-900 flex items-center gap-2">
-            <Plane className="w-5 h-5 text-brand" aria-hidden="true" />
-            Flight <span className="font-normal text-gray-500">Results</span>
+          <h1 className="text-xl font-medium text-gray-900">
+            Flight Results
           </h1>
         </div>
         {/* Search Form */}

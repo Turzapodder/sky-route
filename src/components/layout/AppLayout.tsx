@@ -9,28 +9,34 @@ interface AppLayoutProps {
 export function AppLayout({ children }: AppLayoutProps) {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   return (
-    <div className="min-h-screen bg-surface-secondary">
+    <div className="min-h-screen bg-surface-secondary pt-16">
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block">
-        <Sidebar
-          isCollapsed={sidebarCollapsed}
-          onToggle={() => setSidebarCollapsed(!sidebarCollapsed)}
-        />
-      </div>
-      <div
-        className={cn(
-          'transition-all duration-300',
-          sidebarCollapsed ? 'lg:ml-[72px]' : 'lg:ml-[240px]'
-        )}
-      >
-        <Header />
-        <main id="main-content" className="pb-20 lg:pb-6">
+
+      <Header />
+
+      <div className="flex">
+        {/* Desktop sidebar */}
+        <div className="hidden lg:block">
+          <Sidebar
+            isCollapsed={sidebarCollapsed}
+            onToggle={() => setSidebarCollapsed(!sidebarCollapsed)}
+          />
+        </div>
+
+        {/* Main content */}
+        <main
+          id="main-content"
+          className={cn(
+            'flex-1 transition-all duration-300 pb-20 lg:pb-6',
+            sidebarCollapsed ? 'lg:ml-[72px]' : 'lg:ml-[240px]'
+          )}
+        >
           {children}
         </main>
       </div>
+
       {/* Mobile bottom nav */}
       <MobileNav />
     </div>
