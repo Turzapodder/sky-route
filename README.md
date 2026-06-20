@@ -106,3 +106,6 @@ Application state is decoupled from the UI components using **Zustand**, split i
 - **View Toggling**: Users can switch seamlessly between a rich `FlightCard` layout and a condensed `FlightTable` layout without losing data or scroll position.
 - **Animations**: `framer-motion` is used to orchestrate list staggering (when flight cards load in), modal pop-ups, and step transitions in the booking flow, providing a premium, fluid aesthetic.
 - **Accessibility**: Built with semantic HTML, proper ARIA roles for custom controls (like the view toggles and rating chips), and keyboard navigation support.
+
+## Resource and UI inspiration
+- **Dribbble**: https://dribbble.com/shots/25203339-Flight-Search-Results-UI-Flytkt
