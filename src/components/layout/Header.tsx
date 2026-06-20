@@ -11,7 +11,7 @@ export function Header() {
             <Plane className="w-6 h-6 text-white" aria-hidden="true" />
           </div>
           <div className="overflow-hidden">
-            <h1 className="text-white font-bold text-lg leading-tight tracking-wide">Flytkt</h1>
+            <h1 className="text-white font-bold text-lg leading-tight tracking-wide">Sky Routes</h1>
             <p className="text-[10px] text-gray-400 tracking-widest uppercase mt-[-2px]">Flights</p>
           </div>
         </div>
