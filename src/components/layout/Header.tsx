@@ -52,9 +52,9 @@ export function Header() {
         </button>
 
         <div className="flex items-center gap-3 pl-4 border-l border-gray-700 h-8">
-          <span className="text-sm font-medium text-white hidden sm:block">Salim</span>
+          <span className="text-sm font-medium text-white hidden sm:block">Turjha Podder</span>
           <div className="w-8 h-8 rounded bg-brand text-white text-xs font-bold flex items-center justify-center shadow-sm">
-            SM
+            TZ
           </div>
         </div>
       </div>

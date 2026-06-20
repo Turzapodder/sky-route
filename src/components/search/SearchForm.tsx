@@ -2,6 +2,8 @@ import { ArrowRight, ArrowLeftRight, CalendarDays, Users, ChevronDown, Search, P
 import { useSearchStore } from '@/store/useSearchStore';
 import { TripType } from '@/types/search';
 import { AirportInput } from './AirportInput';
+import { DatePicker } from './DatePicker';
+import { PassengerSelector } from './PassengerSelector';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 
@@ -72,29 +74,15 @@ export function SearchForm({ onSearch, compact = false }: SearchFormProps) {
             </div>
 
             <div className="px-4 py-2.5 lg:w-44 flex flex-col justify-center">
-              <label htmlFor="departure-date" className="block text-[10px] font-medium text-gray-500 uppercase tracking-wider mb-0.5">Departing Date</label>
-              <div className="flex items-center gap-2">
-                <CalendarDays className="w-4 h-4 text-brand flex-shrink-0" />
-                <input id="departure-date" type="date" value={searchParams.departureDate} onChange={(e) => setSearchParams({ departureDate: e.target.value })} className="text-sm font-bold text-gray-900 bg-transparent border-none focus:outline-none w-full uppercase" />
-              </div>
+              <DatePicker label="Departing Date" compact={true} />
             </div>
 
             <div className="px-4 py-2.5 lg:w-44 flex flex-col justify-center">
-              <label htmlFor="returning-date" className="block text-[10px] font-medium text-gray-500 uppercase tracking-wider mb-0.5">Returning Date</label>
-              <div className="flex items-center gap-2">
-                <CalendarDays className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                <input id="returning-date" type="date" value={searchParams.departureDate} disabled className="text-sm font-bold text-gray-900 bg-transparent border-none focus:outline-none w-full text-gray-400 uppercase" />
-              </div>
+              <DatePicker label="Returning Date" compact={true} disabled={searchParams.tripType !== TripType.ROUND_TRIP} />
             </div>
 
             <div className="px-4 py-2.5 lg:w-56 flex flex-col justify-center relative">
-              <label htmlFor="passenger-count" className="block text-[10px] font-medium text-gray-500 uppercase tracking-wider mb-0.5">Passengers & Class</label>
-              <div className="flex items-center gap-2">
-                <Users className="w-4 h-4 text-brand flex-shrink-0" />
-                <select id="passenger-count" value={searchParams.passengers} onChange={(e) => setSearchParams({ passengers: Number(e.target.value) })} className="text-sm font-bold text-gray-900 bg-transparent border-none focus:outline-none w-full cursor-pointer appearance-none">
-                  {[1, 2, 3, 4, 5, 6].map((n) => <option key={n} value={n}>{n} Passenger{n !== 1 ? 's' : ''}, Economy</option>)}
-                </select>
-              </div>
+              <PassengerSelector compact={true} />
             </div>
 
             <div className="p-2 flex items-center justify-center bg-white rounded-r-xl">
@@ -138,30 +126,15 @@ export function SearchForm({ onSearch, compact = false }: SearchFormProps) {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="px-5 py-3.5 bg-gray-50 rounded-2xl border border-gray-100 transition-colors hover:bg-gray-100">
-                <label htmlFor="departure-date" className="block text-xs font-medium text-gray-500 mb-1">Departing</label>
-                <div className="flex items-center gap-3">
-                  <CalendarDays className="w-5 h-5 text-gray-400" />
-                  <input id="departure-date" type="date" value={searchParams.departureDate} onChange={(e) => setSearchParams({ departureDate: e.target.value })} className="text-[15px] font-semibold text-gray-900 bg-transparent border-none focus:outline-none w-full uppercase" />
-                </div>
+                <DatePicker label="Departing" compact={false} />
               </div>
               
               <div className="px-5 py-3.5 bg-gray-50 rounded-2xl border border-gray-100 transition-colors hover:bg-gray-100">
-                <label htmlFor="returning-date" className="block text-xs font-medium text-gray-500 mb-1">Returning</label>
-                <div className="flex items-center gap-3">
-                  <CalendarDays className="w-5 h-5 text-gray-400" />
-                  <input id="returning-date" type="date" value={searchParams.departureDate} disabled className="text-[15px] font-semibold text-gray-900 bg-transparent border-none focus:outline-none w-full text-gray-400 uppercase" />
-                </div>
+                <DatePicker label="Returning" compact={false} disabled={searchParams.tripType !== TripType.ROUND_TRIP} />
               </div>
               
               <div className="px-5 py-3.5 bg-gray-50 rounded-2xl border border-gray-100 transition-colors hover:bg-gray-100 relative">
-                <label htmlFor="passenger-count" className="block text-xs font-medium text-gray-500 mb-1">Passenger and class</label>
-                <div className="flex items-center gap-3">
-                  <Users className="w-5 h-5 text-gray-400" />
-                  <select id="passenger-count" value={searchParams.passengers} onChange={(e) => setSearchParams({ passengers: Number(e.target.value) })} className="text-[15px] font-semibold text-gray-900 bg-transparent border-none focus:outline-none w-full appearance-none cursor-pointer">
-                    {[1, 2, 3, 4, 5, 6].map((n) => <option key={n} value={n}>{n} Passenger{n !== 1 ? 's' : ''}, Economy Class</option>)}
-                  </select>
-                  <ChevronDown className="w-5 h-5 text-gray-600 absolute right-4 pointer-events-none" />
-                </div>
+                <PassengerSelector compact={false} />
               </div>
             </div>
             

@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { type SearchParams, type FilterState, type ViewMode, SortOption, TripType, DEFAULT_FILTERS } from '@/types/search';
+import { type SearchParams, type FilterState, type ViewMode, SortOption, TripType, CabinClass, DEFAULT_FILTERS } from '@/types/search';
 interface SearchState {
   searchParams: SearchParams;
   filters: FilterState;
@@ -21,6 +21,8 @@ export const useSearchStore = create<SearchState>((set, get) => ({
     destination: 'IST',
     departureDate: '2026-12-20',
     passengers: 2,
+    passengerDetails: { adults: 2, children: 0, infants: 0 },
+    cabinClass: CabinClass.ECONOMY,
     tripType: TripType.ONE_WAY,
   },
   filters: { ...DEFAULT_FILTERS },

@@ -9,11 +9,24 @@ export enum TripType {
   ROUND_TRIP = 'round_trip',
   MULTI_CITY = 'multi_city',
 }
+export interface PassengerDetails {
+  adults: number;
+  children: number;
+  infants: number;
+}
+export enum CabinClass {
+  ECONOMY = 'Economy',
+  PREMIUM = 'Premium Economy',
+  BUSINESS = 'Business',
+  FIRST = 'First',
+}
 export interface SearchParams {
   origin: string;
   destination: string;
   departureDate: string;
-  passengers: number;
+  passengers: number; // Total count for convenience
+  passengerDetails: PassengerDetails;
+  cabinClass: CabinClass;
   tripType: TripType;
 }
 export interface FilterState {

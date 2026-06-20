@@ -5,7 +5,6 @@ import { delay, generatePNR, generateBookingId } from '@/lib/utils';
 export async function submitBooking(
   request: BookingRequest
 ): Promise<BookingConfirmation> {
-  // Simulate network latency for booking
   await delay(1500 + Math.random() * 500);
 
   const confirmation: BookingConfirmation = {

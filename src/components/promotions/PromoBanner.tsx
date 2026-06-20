@@ -7,7 +7,7 @@ export function PromoBanner() {
       
       <div className="relative w-full h-[240px] sm:h-[300px] lg:h-[340px] rounded-2xl overflow-hidden group">
         <img 
-          src="/istanbul_promo.png" 
+          src="/flight-banners.png" 
           alt="Fly to Istanbul Promotion" 
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
