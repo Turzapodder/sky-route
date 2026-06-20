@@ -1,3 +1,10 @@
+
+## Demo
+
+[![Watch Demo](./image.png)](https://raw.githubusercontent.com/Turzapodder/sky-route/main/project%20preview.mp4)
+
+
+
 # SkyRoute — Flight Search & Booking Aggregator
 
 A production-grade flight search and booking frontend application built with modern React, TypeScript, and TailwindCSS. It provides a seamless, dynamic user experience with features like infinite scroll, complex filtering, and a multi-step booking flow.
