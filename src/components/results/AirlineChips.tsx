@@ -31,7 +31,7 @@ export function AirlineChips({ airlines }: AirlineChipsProps) {
   }
   if (airlines.length === 0) return null;
   return (
-    <div className="relative" role="region" aria-label="Filter by airline">
+    <div className="relative overflow-hidden" role="region" aria-label="Filter by airline">
       {/* Left arrow */}
       <button
         onClick={() => scroll('left')}

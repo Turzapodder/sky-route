@@ -24,8 +24,8 @@ export function SearchForm({ onSearch, compact = false }: SearchFormProps) {
   return (
     <div className="space-y-4">
       <div className={cn('bg-white rounded-3xl border border-gray-100 shadow-[0_2px_12px_rgba(0,0,0,0.04)]', compact ? 'p-4 rounded-xl' : 'p-6 sm:p-8')}>
-         <div className={cn("flex items-center justify-between mb-6", compact && "mb-4")}>
-          <div className="flex items-center gap-6" role="radiogroup" aria-label="Trip type">
+         <div className={cn("flex items-center justify-between mb-6 flex-wrap gap-3", compact && "mb-4")}>
+          <div className="flex items-center gap-3 sm:gap-6 flex-wrap" role="radiogroup" aria-label="Trip type">
             {tripTypes.map((type) => (
               <button
                 key={type.value}
@@ -57,8 +57,8 @@ export function SearchForm({ onSearch, compact = false }: SearchFormProps) {
         </div>
 
         {compact ? (
-          <div className="flex flex-col lg:flex-row items-stretch border border-gray-200 rounded-xl divide-y lg:divide-y-0 lg:divide-x divide-gray-200 bg-white">
-            <div className="flex items-center flex-1 min-w-0 relative group">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row items-stretch border border-gray-200 rounded-xl divide-y sm:divide-y-0 lg:divide-x divide-gray-200 bg-white overflow-hidden">
+            <div className="flex items-center flex-1 min-w-0 relative group sm:col-span-2 lg:col-span-1 border-b sm:border-b lg:border-b-0 border-gray-200">
               <div className="flex-1 px-4 py-2.5 min-w-0 relative">
                 <AirportInput label="Origin" value={searchParams.origin} onChange={(code) => setSearchParams({ origin: code })} id="origin-airport" />
               </div>
@@ -73,19 +73,19 @@ export function SearchForm({ onSearch, compact = false }: SearchFormProps) {
               </div>
             </div>
 
-            <div className="px-4 py-2.5 lg:w-44 flex flex-col justify-center">
+            <div className="px-4 py-2.5 flex flex-col justify-center border-r border-gray-200 sm:border-r lg:border-r-0">
               <DatePicker label="Departing Date" compact={true} />
             </div>
 
-            <div className="px-4 py-2.5 lg:w-44 flex flex-col justify-center">
+            <div className="px-4 py-2.5 flex flex-col justify-center">
               <DatePicker label="Returning Date" compact={true} disabled={searchParams.tripType !== TripType.ROUND_TRIP} />
             </div>
 
-            <div className="px-4 py-2.5 lg:w-56 flex flex-col justify-center relative">
+            <div className="px-4 py-2.5 flex flex-col justify-center relative sm:col-span-2 lg:col-span-1 border-t sm:border-t lg:border-t-0 border-gray-200">
               <PassengerSelector compact={true} />
             </div>
 
-            <div className="p-2 flex items-center justify-center bg-white rounded-r-xl">
+            <div className="p-2 flex items-center justify-center bg-white sm:col-span-2 lg:col-span-1 border-t lg:border-t-0 border-gray-200">
               <Button onClick={onSearch} size="lg" className="w-full lg:w-auto h-full px-6 rounded-lg whitespace-nowrap bg-gray-900 hover:bg-gray-800 text-white font-semibold">
                 Modify Search
               </Button>

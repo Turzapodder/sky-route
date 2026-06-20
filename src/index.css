@@ -61,12 +61,14 @@ html {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--color-surface-secondary);
   color: var(--color-text-primary);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Custom scrollbar */

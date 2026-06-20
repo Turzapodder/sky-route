@@ -2,7 +2,7 @@ import { ChevronDown, AlignJustify, List } from 'lucide-react';
 
 export function FilterPanel() {
   return (
-    <div className="flex items-center gap-2.5 flex-wrap">
+    <div className="flex items-center gap-2 sm:gap-2.5 flex-wrap">
       {/* Static Mockup Dropdowns */}
       <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-200 text-xs font-semibold text-gray-700 hover:bg-gray-50 bg-white transition-colors">
         Direct / Connecting

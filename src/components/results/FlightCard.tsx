@@ -34,9 +34,9 @@ export function FlightCard({ flight, index, onBook }: FlightCardProps) {
     >
       <div className="p-4 sm:p-5">
         {/* Main content row */}
-        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex flex-col gap-4">
           {/* Airline info */}
-          <div className="flex items-center gap-3 sm:w-44 flex-shrink-0">
+          <div className="flex items-center gap-3 flex-shrink-0">
             <div
               className={cn(
                 'w-10 h-10 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0',
@@ -54,14 +54,14 @@ export function FlightCard({ flight, index, onBook }: FlightCardProps) {
           {/* Flight route visualization */}
           <div className="flex items-center gap-3 flex-1 min-w-0">
             {/* Departure */}
-            <div className="text-center flex-shrink-0">
-              <p className="text-lg font-bold text-gray-900">{flight.departure.time}</p>
-              <p className="text-xs text-gray-500">
+            <div className="text-left sm:text-center flex-shrink-0">
+              <p className="text-base sm:text-lg font-bold text-gray-900">{flight.departure.time}</p>
+              <p className="text-xs text-gray-500 truncate max-w-[90px] sm:max-w-none">
                 {originInfo ? `${originInfo.city} (${flight.departure.airport})` : flight.departure.airport}
               </p>
             </div>
             {/* Route line */}
-            <div className="flex-1 flex flex-col items-center gap-1 min-w-[80px]">
+            <div className="flex-1 flex flex-col items-center gap-1 min-w-[60px]">
               <p className="text-[11px] text-gray-400 font-medium">{formatDuration(flight.duration_minutes)}</p>
               <div className="w-full relative">
                 <div className="route-line w-full">
@@ -81,45 +81,47 @@ export function FlightCard({ flight, index, onBook }: FlightCardProps) {
               )}>
                 {getStopLabel(flight.stops_count)}
                 {flight.stops_count > 0 && (
-                  <span className="text-gray-400"> · {flight.stops_details.join(', ')}</span>
+                  <span className="text-gray-400 hidden sm:inline"> · {flight.stops_details.join(', ')}</span>
                 )}
               </p>
             </div>
             {/* Arrival */}
-            <div className="text-center flex-shrink-0">
-              <p className="text-lg font-bold text-gray-900">{flight.arrival.time}</p>
-              <p className="text-xs text-gray-500">
+            <div className="text-right sm:text-center flex-shrink-0">
+              <p className="text-base sm:text-lg font-bold text-gray-900">{flight.arrival.time}</p>
+              <p className="text-xs text-gray-500 truncate max-w-[90px] sm:max-w-none">
                 {destInfo ? `${destInfo.city} (${flight.arrival.airport})` : flight.arrival.airport}
               </p>
             </div>
           </div>
           {/* Pricing */}
-          <div className="sm:text-right sm:w-44 flex-shrink-0">
+          <div className="flex items-center justify-between sm:block sm:text-right flex-shrink-0">
             <p className="text-sm text-gray-500">
               Total Fare: <span className="font-bold text-gray-900">{formatPriceDecimal(flight.pricing.total_fare)}</span>
             </p>
-            <p className="text-xs text-gray-400">
-              Commission: <span className="text-brand font-medium">{formatPriceDecimal(flight.pricing.commission)}</span>
-            </p>
-            <p className="text-xs text-gray-500">
-              Agent Fare: <span className="font-semibold text-gray-700">{formatPriceDecimal(flight.pricing.agent_fare)}</span>
-            </p>
+            <div className="flex gap-3 sm:block">
+              <p className="text-xs text-gray-400">
+                Commission: <span className="text-brand font-medium">{formatPriceDecimal(flight.pricing.commission)}</span>
+              </p>
+              <p className="text-xs text-gray-500">
+                Agent Fare: <span className="font-semibold text-gray-700">{formatPriceDecimal(flight.pricing.agent_fare)}</span>
+              </p>
+            </div>
           </div>
         </div>
         {/* Tags & Actions row */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mt-4 pt-4 border-t border-dashed border-gray-200">
           {/* Tags */}
-          <div className="flex items-center gap-4 flex-wrap">
-            {flight.tags.is_cheapest && <span className="text-[11px] font-semibold text-gray-500">Cheapest</span>}
-            {flight.tags.is_fastest && <span className="text-[11px] font-semibold text-gray-500">Fastest</span>}
+          <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
+            {flight.tags.is_cheapest && <span className="text-[11px] font-semibold text-gray-500 whitespace-nowrap">Cheapest</span>}
+            {flight.tags.is_fastest && <span className="text-[11px] font-semibold text-gray-500 whitespace-nowrap">Fastest</span>}
             {flight.tags.is_refundable ? (
-              <span className="text-[11px] font-semibold text-gray-500">Refundable</span>
+              <span className="text-[11px] font-semibold text-gray-500 whitespace-nowrap">Refundable</span>
             ) : (
-              <span className="text-[11px] font-semibold text-gray-500">Non Refundable</span>
+              <span className="text-[11px] font-semibold text-gray-500 whitespace-nowrap">Non Refundable</span>
             )}
-            <span className="text-[11px] font-semibold text-gray-500">Book & Hold</span>
+            <span className="text-[11px] font-semibold text-gray-500 whitespace-nowrap">Book & Hold</span>
             {flight.tags.allow_partial_payment && (
-              <span className="text-[11px] font-semibold text-red-500">Partial Payment</span>
+              <span className="text-[11px] font-semibold text-red-500 whitespace-nowrap">Partial Payment</span>
             )}
           </div>
           {/* Action buttons */}

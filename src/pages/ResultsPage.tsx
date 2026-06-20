@@ -11,18 +11,18 @@ import type { Flight } from '@/types/flight';
 export function ResultsPage() {
   const { flights, airlines, isLoading, error, hasSearched, handleSearch } = useFlightSearch();
   const { openBooking } = useBookingStore();
-  const { searchParams } = useSearchStore();
+  const { searchParams, setHasSearched } = useSearchStore();
   function handleBook(flight: Flight) {
     openBooking(flight, searchParams.passengers);
   }
   return (
     <>
-      <div className="px-4 sm:px-6 lg:px-8 py-6 max-w-[1200px] mx-auto">
+      <div className="px-4 sm:px-6 lg:px-8 py-6 max-w-[1200px] mx-auto overflow-hidden">
         {hasSearched ? (
           <div className="space-y-6">
             {/* Page header */}
             <div className="flex items-center gap-4">
-              <button className="text-gray-900 hover:text-gray-600 transition-colors" aria-label="Go back" onClick={() => { /* maybe reset search? */ }}>
+              <button className="text-gray-900 hover:text-gray-600 transition-colors" aria-label="Go back" onClick={() => setHasSearched(false)}>
                 <ArrowLeft className="w-5 h-5" />
               </button>
               <h1 className="text-xl font-medium text-gray-900">
